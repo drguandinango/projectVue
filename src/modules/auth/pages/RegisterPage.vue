@@ -1,19 +1,6 @@
 <template>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     <h1 class="text-2xl font-semibold mb-4">reguster</h1>
 
     <form action="#" method="POST">
