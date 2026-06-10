@@ -61,7 +61,7 @@ export const router = createRouter({
 
       name: 'auth',
 
-      component: () => import('@/modules/auth/LoginPage.vue'),
+      component: () => import('@/modules/auth/pages/LoginPage.vue'),
     },
   ],
 })
