@@ -11,7 +11,7 @@
                 </a>
             </div>
             <!--             <nav class="ml-auto space-x-4 flex items-end h-10 sm:space-x-6">
- -->10
+ -->
             <nav class="flex flex-col ml-auto space-x-4 items-end h-10 sm:space-x-6">
 
                 <div class="space-x-4">
@@ -29,6 +29,8 @@
                 </div>
 
                 <div class="space-x-4">
+                    <RouterLink to="/pokemon/1"> pokemons </RouterLink>
+
                     <RouterLink to="/auth"> loginn </RouterLink>
                 </div>
 

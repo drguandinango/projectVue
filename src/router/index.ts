@@ -11,16 +11,12 @@ export const router = createRouter({
 
     {
       path: '/',
-
       name: 'landing',
-
       component: () => import('@/modules/landing/layouts/LandingLayout.vue'),
       children: [
         {
           path: '/',
-
           name: 'home',
-
           component: HomePage,
         },
 
@@ -28,9 +24,7 @@ export const router = createRouter({
 
         {
           path: '/feutures',
-
           name: 'feutures',
-
           component: () => import('@/modules/landing/pages/FeuturesPage.vue'),
         },
 
@@ -38,9 +32,7 @@ export const router = createRouter({
 
         {
           path: '/Contact',
-
           name: 'Contact',
-
           component: () => import('@/modules/landing/pages/ContactPage.vue'),
         },
 
@@ -48,12 +40,16 @@ export const router = createRouter({
 
         {
           path: '/Pricing',
-
           name: 'Pricing',
-
           component: () => import('@/modules/landing/pages/PricingPage.vue'),
         },
-        //logiin
+        //pokemon
+        {
+          path: '/pokemon/:id',
+          name: 'pokemon',
+          props: true,
+          component: () => import('@/modules/pokemon/pages/PokemonPage.vue'),
+        },
       ],
     },
     //ruta Auth
