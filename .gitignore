@@ -1,0 +1,73 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+.DS_Store
+dist
+dist-ssr
+coverage
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.tsbuildinfo
+
+.eslintcache
+
+# Cypress
+/cypress/videos/
+/cypress/screenshots/
+
+# Vitest
+__screenshots__/
+
+# Vite
+*.timestamp-*-*.mjs
+
+# Yarn Berry (Plug'n'Play)
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Descomenta la siguiente línea si NO quieres guardar la caché en Git (Recomendado para empezar)
+.yarn/cache
+
+  .editorconfig
+        .gitattributes
+        .gitignore
+        .oxlintrc.json
+        .prettierrc.json
+        .vscode/
+        README.md
+        env.d.ts
+        eslint.config.ts
+        index.html
+        package.json
+        postcss.config.js
+        public/
+        src/
+        tailwind.config.js
+        tsconfig.app.json
+        tsconfig.json
+        tsconfig.node.json
+        vite.config.ts
+        yarn.lock
+
