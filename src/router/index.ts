@@ -43,13 +43,24 @@ export const router = createRouter({
           name: 'Pricing',
           component: () => import('@/modules/landing/pages/PricingPage.vue'),
         },
-        //pokemon
+
         {
+          path: '/pokemon/:id',
+          name: 'pokemon',
+          props: (route) => {
+            const id = +route.params.id
+            return isNaN(id) ? { id: 1 } : { id }
+          },
+
+          component: () => import('@/modules/pokemon/pages/PokemonPage.vue'),
+        },
+        //pokemon
+        /*    {
           path: '/pokemon/:id',
           name: 'pokemon',
           props: true,
           component: () => import('@/modules/pokemon/pages/PokemonPage.vue'),
-        },
+        }, */
       ],
     },
     //ruta Auth
